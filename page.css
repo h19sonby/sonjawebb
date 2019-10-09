@@ -2,8 +2,9 @@
 
 
 body {
-    background: #2d3949;
     background: #2d3949 url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130891/stars.png) repeat top center;
+    margin: 0;
+
 }
 @keyframes move-twink-back {
     from {
@@ -18,8 +19,8 @@ body {
     height: 100%;
     width: 100%;
     background: transparent url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130891/twinkling.png) repeat top center;
-    z-index: 1;
     animation: move-twink-back 200s linear infinite;
+    z-index: -999;
 }
 h1 {
     font-size: 72px;
@@ -29,8 +30,7 @@ h2 {
     color: white;
     text-align: right;
     position: absolute;
-    right: 50px;
-    
+    right: 50px;  
 }
 h3 {
     font-size: 48px;
@@ -57,7 +57,6 @@ p {
     width: 100%;
     overflow: hidden;
     z-index: 2;
-
 }
 .video:before {
     content: '';
@@ -92,7 +91,7 @@ li {
     padding: 10px;
 }
 
-header {
+#Main {
     margin: 0;
     position: relative;
     z-index: 3;
@@ -107,4 +106,9 @@ img:hover {
 
 #scrolldown {
     color: white;
+}
+
+.Links {
+    
+    z-index: 
 }
